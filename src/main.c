@@ -57,5 +57,22 @@ int main()
 		printf("%f ", sac[k].w);
 	}
 	
+	objet1.c = 2;
+	objet1.w = 6;
+	objet2.c = 8;
+	objet2.w = 7;
+	objet3.c = 3;
+	objet3.w = 2;
+
+	objets tabObjet2[3] = {objet1, objet2 , objet3};
+	objets sac2[3];
+	knapSack(sac2 ,tabObjet2, 3, 15);
+	printf("deuxieme test : \n");
+	for (int l = 0; l < 3; l++)
+	{
+		printf("%f ", sac2[l].w);
+	}
+
+	
 	return (0);
 }

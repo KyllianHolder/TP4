@@ -22,7 +22,7 @@ void knapSack(objets sac[] , objets array[], int nbObj, int pMax)
     int j = 0;
     while (sacRempli == false)
     {
-        if (p + array[j].w <pMax)
+        if (p + array[j].w <=pMax)
         {
             sac[j] = array[j];
             p = p + array[j].w ;
