@@ -26,6 +26,7 @@ void knapSack(objets sac[] , objets array[], int nbObj, int pMax)
         {
             sac[j] = array[j];
             p = p + array[j].w ;
+            j++;
         }
         else
         {
